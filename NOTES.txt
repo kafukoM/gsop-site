@@ -1,0 +1,57 @@
+CONCEPTS
+- npx vs npm
+- dev dependency (-D)
+- package.json (general blueprint) vs package-lock.json (exact versions of dependency tree)
+- tailwind.config (module.exports, theme (customize default), extends(add/override default) config(add functionality), content[])
+- @tailwind base (html, body, h1, p etc)
+- @tailwind components (card, alert, modal etc)
+- @tailwind utilities (padding, margin, flexbox, grid, color, background etc)
+- minified css
+- .container is used to apply full width to an element based on the screen size without stretching it's contents (centred)
+- @apply directive used to style html elements using custom utility classes defined in the tailwind.config file
+e.g @apply text-secondary font-primary text-[17px] leading-8; secondary, primary are custom utility and should have been defined in the config file
+- utility classes - capitalize, leading, tracking, transition-all (smoothness for state change)
+- Descendant combinator (space): Use when you want to style elements that are nested within a specific parent, regardless of depth.
+- Child combinator (>): Best for targeting direct children, ensuring styles don't inadvertently apply to deeper nested elements.
+- Adjacent sibling combinator (+): Ideal for styling layouts where you want to apply styles to an element that immediately follows another.
+- General sibling combinator (~): Useful for applying styles to elements that follow another element at any point later in the document, 
+  as long as they share the same parent.
+
+
+
+
+Tailwind CSS Styling Guide
+
+    Layout:
+        Display (block, flex, grid, hidden)
+        Position (relative, absolute, fixed, sticky)
+        Top/Right/Bottom/Left (Position adjustments)
+
+    Box Model:
+        Width and Height (w-*, h-*)
+        Padding (p-*, px-*, py-*, pt-*, pr-*, pb-*, pl-*)
+        Margin (m-*, mx-*, my-*, mt-*, mr-*, mb-*, ml-*)
+        Border (border, border-t, border-r, border-b, border-l)
+        Box Sizing (box-border, box-content)
+
+    Typography:
+        Font Family (font-sans, font-serif, font-mono)
+        Font Size (text-xs, text-sm, text-md, ...)
+        Font Weight (font-light, font-normal, font-bold)
+        Line Height (leading-none, leading-tight, leading-normal)
+        Text Alignment (text-left, text-center, text-right)
+        Text Color (text-gray-500, text-red-500)
+
+    Visuals:
+        Backgrounds (bg-*)
+        Colors (text-color, bg-color, border-color)
+        Opacity (opacity-*)
+        Shadows (shadow, shadow-md)
+
+    Flexbox and Grid:
+        Flex Direction (flex-row, flex-col)
+        Justify Content (justify-start, justify-center, justify-end)
+        Align Items (items-start, items-center, items-end)
+
+    Breakpoints:
+        Responsive Design (sm:, md:, lg:, xl:, 2xl:) 
